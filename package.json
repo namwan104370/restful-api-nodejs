@@ -2,11 +2,11 @@
   "name": "restful-api-nodejs",
   "version": "1.0.0",
   "description": "Example of RESTful API with Node.js + MongoDB",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "format": "./node_modules/.bin/prettier --write server.js",
-    "dev": "nodemon server.js"
+    "start": "node index.js",
+    "format": "prettier --write index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [
     "RESTFul",
@@ -19,10 +19,15 @@
   "author": "Chai Phonbopit",
   "license": "MIT",
   "dependencies": {
-    "express": "4.17.1",
-    "mongoose": "5.6.9"
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.5.0",
+    "mongoose": "^5.13.17"
   },
   "devDependencies": {
+    "nodemon": "^2.0.22",
     "prettier": "1.18.2"
   }
 }
